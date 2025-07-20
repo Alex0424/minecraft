@@ -1,0 +1,9 @@
+[project]
+name = "papermc-libraries"
+version = "0.1.0"
+description = "dependencies to run scripts at the PaperMC server"
+requires-python = ">=3.10"
+
+dependencies = [
+    "requests"
+]
