@@ -45,3 +45,5 @@ if compress:
     with tarfile.open(tar_path, "w:gz") as tar:
         tar.add(backup_dir, arcname=backup_dir.name)
     print(f"Backup compressed to {tar_path}")
+
+# Save to Amazon S3 bucket in near future

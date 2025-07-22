@@ -1,0 +1,16 @@
+- name: Install required packages for Minecraft server
+  hosts: all
+  become: true
+  tasks:
+    - name: Update apt cache and install packages
+      apt:
+        name:
+          - openjdk-21-jre-headless
+          - wget
+          - unzip
+          - screen
+          - curl
+          - jq
+        state: present
+        update_cache: yes
+
